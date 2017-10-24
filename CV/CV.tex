@@ -42,6 +42,8 @@
 \usepackage{moderncvcompatibility}
 \usepackage{microtype}
 \usepackage{microtype}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -60,7 +62,7 @@
 %\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
 %\extrainfo{additional information}
 %\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
-%\quote{"A witty and playful quotation" - John Smith}
+\quote{" En tanke är en idé i rörelse" - Albert Einstein}
 
 %----------------------------------------------------------------------------------------
 
@@ -68,6 +70,34 @@
 %----------------------------------------------------------------------------------
 \begin{document}
 %-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+\clearpage
+
+\recipient{HR Avdelning XX}{Företag\\Gatoadress\\111 11  Stad, Land} % Letter recipient
+\date{\today} % Letter date
+\opening{Hej,} % Opening greeting
+\closing{Med vänliga hälsningar,} % Closing phrase
+\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+\input{brev/standard.tex}
+%\lipsum[1-2] % Dummy text
+%\lipsum[4] % Dummy text
+
+\makeletterclosing % Print letter signature
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
 \makecvtitle
 
 \section{Utbildning}
