@@ -1,0 +1,108 @@
+\documentclass[11pt,a4paper,sans]{moderncv}   % 
+\usepackage[utf8]{inputenc}
+\usepackage[sc,osf]{mathpazo}
+\usepackage[swedish]{babel}
+
+\moderncvstyle{classic}                        % style 
+\moderncvcolor{green}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}
+
+% personal data
+%\firstname{Sara}
+%\familyname{Kjellberg}
+%\title{Curriculum Vit\ae{}}                         
+%\address{Ärentunavägen 5P}{743 30, STORVRETA}  
+%\mobile{073 0214698}                     % optional, 
+%\phone{~018~314625}                      % optional, 
+%\fax{+3~(456)~789~012}                        % 
+%\email{kjellberg.sara@gmail.com}                          
+%\homepage{www.johndoe.com}                    % 
+%\extrainfo{Född: 4 juli 1985}            % 
+%\photo[64pt][0.4pt]{picture}                  %  '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame)
+%\quote{``A complexity is merely a disarrangement of simplicities.''}                            % 
+
+
+%----------------------------------------------------------------------------------------
+%	EXTRA USEPACKAGES?
+%----------------------------------------------------------------------------------------
+\usepackage{etoolbox}
+\usepackage{ifthen}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{fancyhdr}
+\usepackage{calc}
+\usepackage{xargs}
+\usepackage{microtype}
+\usepackage{moderncvcompatibility}
+\usepackage{microtype}
+\usepackage{microtype}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Sara} % Your first name
+\familyname{Kjellberg} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Ärentunavägen 5P}{743 30, STORVRETA}
+%\mobile{(000) 111 1111}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+%\email{john@smith.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------
+\begin{document}
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\makecvtitle
+
+\section{Utbildning}
+\cventry{2004--2017}{Kandidatexamen}{ Naturvetarprogrammet  kemi}{Uppsala Universitet}{}{}  % Arguments not required can be left empty
+\cventry{2001--2004}{Gymnasieutbildning}{Teknik,  inrikning  ``Arkitektur och sammhälle''}{Wennströmska Gymnasiet}{Västerås}{}
+
+\section{Anställning}
+\cventry{2014--2016}{Lärarvikarie/springvikarie}{Uppsala Vård och bildning}{Uppsala kommun}{Förskola, fritids samt årskurs 1-9}{\textit{Ämnen: Sv, Eng, Sp, Bi, Fy, Tk, Kemi, bild, musik och hemkunskap }}
+
+\section{Förtroendeuppdrag}
+\cventry{2007--2011}{Arrangör}{Uppsala matematikstudenter}{Uppsala}{}{Fixade lokal och hjälpte till med planering och beredning av mat vid fester.}   %\newline{}%
+%\cventry{2006--2008}{Studeranderepressentant}{Instututionen för Materialvetenskap}{Uppsala}{} {}
+\cventry{2006--2008}{Studeranderepresentant}{Uppsala Teknolog och naturvetarkår}{Uppsala}{} {Studiesocialla utskottet, programmrådet och institutionsstyrelsen för materialkemi.}
+\cventry{2004--2006}{Fadder}{Uppsala teknolog och naturvetarkår}{Uppsala}{}{}
+\cventry{2002--2004}{Klassrepresentant}{Wennströmska Gynmasiet}{Västerås}{} {}{}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Datorkunskaper}
+\cvitemwithcomment{Operativsystem}{Linuxmint, Debyan och Ubunto (xfce, kde, gnome 2), Windows}{}
+\cvitemwithcomment{Office}{Excel, Power Point, Word, libreoffice, gnumeric}{}
+\cvitemwithcomment{Programmering}{Grundläggande objektorienterad programmering i java}{}
+\cvitemwithcomment{Diverse}{Databaser, div. analysprogram, grundläggande bildredigering}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Språkkunskaper}
+\cvitemwithcomment{Svenska}{Modersmål}{}
+\cvitemwithcomment{Engelska}{Flytande i tal och skrift}{}
+\cvitemwithcomment{Spanska}{Grundläggande}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Diverse}
+\cventry{2000--2002}{Scoutledare}{Västerås Sjöscoutkår}{Västerås}
+{\textit{Lärare}}{Höll presentationer och fixade övningar i knopar, båtvett, säkerhet till sjöss och grundläggande navigation}
+\cventry{2000--2001}{Kvällskurser}{Medborgarskolan i Västerås}{}
+{\textit{Skärgårds-- och Kustskepparexamen}}{``Körkort'' för större båt vid privat bruk. Båtpraktik dag och mörker ingick.} 
+\cventry{1996--}{Musik}{Olika orkestrar}{Uppsala, Västerås}
+{\textit{Klarinettist}}{Spelat i diverse blåsorkestrar}
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\end{document}
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
